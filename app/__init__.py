@@ -1,6 +1,7 @@
 from flask import Flask
 from .config import Configuration
 from .routes import main_bp
+from .routes import order_bp
 from .models import db, Customer, Order
 
 # this line of code is just for an example
