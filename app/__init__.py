@@ -1,11 +1,6 @@
 from flask import Flask
 from .config import Configuration
-<<<<<<< HEAD
-from .routes import main_bp
-from .routes import order_bp
-=======
-from .routes import main_bp, customer_bp
->>>>>>> 52152235bf12d12cb1336e56548e050e6313590b
+from .routes import main_bp, customer_bp, order_bp
 from .models import db, Customer, Order
 
 # this line of code is just for an example
