@@ -1,7 +1,11 @@
 from flask import Flask
 from .config import Configuration
+<<<<<<< HEAD
 from .routes import main_bp
 from .routes import order_bp
+=======
+from .routes import main_bp, customer_bp
+>>>>>>> 52152235bf12d12cb1336e56548e050e6313590b
 from .models import db, Customer, Order
 
 # this line of code is just for an example
@@ -10,6 +14,7 @@ from .models import db, Customer, Order
 app = Flask(__name__)
 app.config.from_object(Configuration)
 app.register_blueprint(main_bp)
+app.register_blueprint(customer_bp)
 app.register_blueprint(order_bp)
 db.init_app(app)
 
