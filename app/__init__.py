@@ -9,6 +9,7 @@ from .models import db, Customer, Order
 app = Flask(__name__)
 app.config.from_object(Configuration)
 app.register_blueprint(main_bp)
+app.register_blueprint(order_bp)
 db.init_app(app)
 
 
